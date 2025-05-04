@@ -1,30 +1,29 @@
-# Kraken Display SFML
+# Kraken Display
 
-A custom Linux daemon that renders CPU temperature and other information onto an NZXT Kraken display using SFML. Designed for headless execution with systemd and virtual OpenGL (via Xvfb), this project offers dynamic rendering, color gradients, and plans for full customization through a future GUI.
+A Linux tool that renders real-time system information (like CPU temperature) to the screen of an NZXT Kraken cooler using SFML. Built for use in headless environments and designed to run as a background service, this project provides a customizable and visually rich alternative to Windows-only software.
 
 ---
 
 ## Features
 
-- ✅ Renders current CPU temperature to the Kraken screen
-- ✅ Uses SFML for high-quality text and graphics
-- ✅ Gradient bar visualizes temperature range (orange → red)
-- ✅ Runs as a systemd service with clean signal handling
-- ✅ `xvfb-run` integration for headless environments
-- ✅ Easy deployment script for updating the binary
+- Displays CPU temperature with smooth text and graphical indicators
+- Animated gradient bar that visually represents system heat
+- Intended to run as a systemd service or lightweight background app
 
 ---
 
 ## Requirements
 
 - [SFML 3.0](https://www.sfml-dev.org/download.php)
-- `liquidctl` (for communicating with Kraken devices)
-- `xorg-server-xvfb` (for virtual OpenGL rendering under systemd)
-- C++20 compiler
+- `liquidctl` (for Kraken LCD communication)
 
 ---
 
-## Development Setup
+## Building
+
+Clone the repo and build the binary:
 
 ```bash
-sudo pacman -S sfml liquidctl xorg-server-xvfb
+git clone https://github.com/hday200202/kraken-display.git
+cd kraken-display-sfml
+make
