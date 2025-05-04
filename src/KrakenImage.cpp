@@ -1,7 +1,7 @@
 #include "KrakenImage.hpp"
 
 KrakenImage::KrakenImage() {
-    if (!font.openFromFile("fonts/BebasNeue-Regular.ttf")) {
+    if (!font.openFromFile("fonts/DepartureMono-Regular.otf")) {
         std::cerr << "sf::Font::openFromFile() error" << sf::err << '\n';
         running = false;
     }
@@ -28,7 +28,7 @@ void KrakenImage::generateImage() {
     sf::String finalText = sf::String::fromUtf8(text.begin(), text.end());
 
     tempText.setString(finalText);
-    tempText.setCharacterSize(160);
+    tempText.setCharacterSize(100);
     tempText.setFillColor(sf::Color::White);
     tempText.setPosition({160 - (tempText.getLocalBounds().size.x / 2), 160 - (tempText.getCharacterSize() / 2) - 60});
 
