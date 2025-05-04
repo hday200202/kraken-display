@@ -1,6 +1,6 @@
 # Kraken Display
 
-A Linux tool that renders real-time system information (like CPU temperature) to the screen of an NZXT Kraken cooler using SFML. Built for use in headless environments and designed to run as a background service, this project provides a customizable and visually rich alternative to Windows-only software.
+A Linux tool that renders real-time system information (like CPU temperature) to the screen of an 2023 NZXT Kraken cooler using SFML. Built for use in headless environments and designed to run as a background service, this project provides a customizable and visually rich alternative to Windows-only software.
 
 ---
 
